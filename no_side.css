@@ -1,7 +1,7 @@
 body {
     margin: auto;
     padding: 50px;
-    color: #000;
+    color: #000; /* black */
     font-family: 'Lato', sans-serif;
 }
 
@@ -27,21 +27,18 @@ body {
 
 .box {
     padding: 20px;
-    /* border-radius: 10px; */
-    background-color: #ddd;
-    border-radius: 10px;
 }
 
 /* Area colouring... */
 
 /* logo, banner and footer background are the same */
 .logo, .banner, .footer {
-    background-color: #1e4957;  /* dark grey */
+    background-color: #1e4957;  /* dark navy blue */
 }
 
 /* Set font on dark areas to white */
 .logo, .banner, .side, .footer {
-    color: #fff;
+    color: #fff; /* white */
 }
 
 /* Area specifics */
@@ -51,34 +48,38 @@ body {
     height: 200px;
     width: 200px;
     background-image: url(images/Chonker_MID_edit.png);
+    border-top-left-radius: 50px;
 }
 
 .banner {
     grid-area: banner;
+    border-top-right-radius: 50px;
 }
 
 .nav {
     grid-area: nav;
-    background-color: #448584;  /* silver */
+    background-color: #448584;  /* dark cyan */
     font-size: 150%;
     text-align: center;
 }
 
 .main {
     grid-area: main;
-    background-color: #def2ec;  /* very pale grey */
-    border: solid 1px #CCC;
+    background-color: #def2ec;  /* pale turqoise */
+    border: solid 1px #CCC; /* light grey */
 }
 
 .side {
     grid-area: side;
-    background-color: #abcbb1;  /* grey */
-    border: solid 1px #CCC;
+    background-color: #abcbb1;  /* mint green */
+    border: solid 1px #CCC; /* grey */
    
 }
 
 .footer {
     grid-area: footer;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
     text-align: right;
 }
 
@@ -89,17 +90,16 @@ h1, h2, h3, h4 {
 }
 
 /* Navigation Links */
-.nav a {font-weight: bold;}
-.nav a:link {color: #def2ec}
-.nav a:visited {color: #8ba8b3;} /*dark red */
-.nav a:hover {color: #fff; text-decoration: none;} /* chocolate brown */
+a.side{font-weight: bold; text-decoration: none;}
+a.side:link, a.side:visited {color: #def2ec} /* pale turqoise */
+a.side:hover {color: #fff;} /* white */
 
 
 /* links in page */
 a {font-weight: bold;}
-a:link{color: #def2ec;} /*dark_red */
-a:visited{color: #8ba8b3;} /* dark blue */
-a:hover{color: #fff;}    /* Black*/
+a:link{color: #def2ec;} /* pale turqoise */
+a:visited{color: #8ba8b3;} /* light greyish blue */
+a:hover{color: #fff;}    /* white */
 
 
 /* Contact Form Styling */
@@ -109,7 +109,6 @@ a:hover{color: #fff;}    /* Black*/
 
 
 .img-circle {
-    border-radius: 50%;
     max-width: 85%;
     height: auto;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);    
@@ -122,6 +121,6 @@ a:hover{color: #fff;}    /* Black*/
 /* Sub Heading Formatting */
 .sub_heading {
     font-family: 'Ubuntu', sans-serif;
-    color: #593849; /* purple */
+    color: #593849; /* dark maroon */
     font-weight: bold;
 }
