@@ -17,7 +17,7 @@ body {
         "nav nav nav"
         "main main side"
         "footer footer footer";
-        grid-gap: 4px;
+    grid-gap: 4px;
 }
 
 /* ---- End of grid setup ---- */
@@ -47,7 +47,7 @@ body {
     padding: 0;
     height: 200px;
     width: 200px;
-    background-image: url(images/Chonker_MID_edit.png);
+    background-image: url(book_200.png);
     border-top-left-radius: 50px;
 }
 
@@ -89,13 +89,13 @@ h1, h2, h3, h4 {
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* Navigation Links */
+/* Side Links */
 a.side{font-weight: bold; text-decoration: none;}
 a.side:link, a.side:visited {color: #def2ec} /* pale turqoise */
 a.side:hover {color: #fff;} /* white */
 
 
-/* links in page */
+/* Links in Page */
 a {font-weight: bold;}
 a:link{color: #def2ec;} /* pale turqoise */
 a:visited{color: #8ba8b3;} /* light greyish blue */
@@ -109,9 +109,11 @@ a:hover{color: #fff;}    /* white */
 
 
 .img-circle {
-    max-width: 85%;
+    border-radius: 50%;
+    border: solid 5px #fff;
+    max-width: 50%;
     height: auto;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);    
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);
 }
 
 .center_image {
